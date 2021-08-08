@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE4E4233198E2D04FA04F6D /* Pods_Cryptomat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFE27006DBF39C969CE6D22 /* Pods_Cryptomat.framework */; };
+		9F3C0EBB26BEB91300A74D9A /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EBA26BEB91300A74D9A /* Portfolio.swift */; };
+		9F3C0EC026BEC33400A74D9A /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EBF26BEC33400A74D9A /* PortfolioViewController.swift */; };
+		9F3C0EC426BEC7E800A74D9A /* PortfolioRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EC326BEC7E800A74D9A /* PortfolioRepository.swift */; };
+		9F3C0EC626BEC81F00A74D9A /* PortfolioRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EC526BEC81F00A74D9A /* PortfolioRepositoryImpl.swift */; };
+		9F3C0ECA26BEC88700A74D9A /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EC926BEC88700A74D9A /* PortfolioViewModel.swift */; };
+		9F3C0ECC26BEC8D000A74D9A /* PortfolioViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0ECB26BEC8D000A74D9A /* PortfolioViewModelImpl.swift */; };
+		9F3C0ECE26BECF3000A74D9A /* PortfolioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0ECD26BECF3000A74D9A /* PortfolioRecord.swift */; };
+		9F3C0ED626BEF03600A74D9A /* ViewClickListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0ED526BEF03600A74D9A /* ViewClickListener.swift */; };
+		9F3C0EE526BF036B00A74D9A /* CryptoPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0EE426BF036B00A74D9A /* CryptoPick.swift */; };
+		9F3C0F0926BFD35E00A74D9A /* PickCryptoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F0826BFD35E00A74D9A /* PickCryptoDelegate.swift */; };
+		9F3C0F1026BFD71800A74D9A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F0F26BFD71800A74D9A /* SearchViewController.swift */; };
+		9F3C0F1226BFD77E00A74D9A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F1126BFD77E00A74D9A /* SearchViewModel.swift */; };
+		9F3C0F1426BFD79700A74D9A /* SearchViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F1326BFD79700A74D9A /* SearchViewModelImpl.swift */; };
+		9F3C0F1626BFD83B00A74D9A /* SearchRepositorz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F1526BFD83B00A74D9A /* SearchRepositorz.swift */; };
+		9F3C0F1826BFD86400A74D9A /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F1726BFD86400A74D9A /* SearchRepositoryImpl.swift */; };
+		9F3C0F1B26BFEB7700A74D9A /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F1A26BFEB7700A74D9A /* SearchQuery.swift */; };
+		9F3C0F2126BFEC0500A74D9A /* CryptoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F2026BFEC0500A74D9A /* CryptoType.swift */; };
+		9F3C0F2526C0039100A74D9A /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F2426C0039100A74D9A /* Asset.swift */; };
+		9F3C0F2D26C0326300A74D9A /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F2C26C0326300A74D9A /* ExchangeViewController.swift */; };
+		9F3C0F3326C032B000A74D9A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3226C032B000A74D9A /* DetailsViewController.swift */; };
+		9F3C0F3526C0523000A74D9A /* ChartDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3426C0523000A74D9A /* ChartDateFormatter.swift */; };
+		9F3C0F3726C053E500A74D9A /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3626C053E500A74D9A /* DetailsViewModel.swift */; };
+		9F3C0F3926C0543100A74D9A /* DetailsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3826C0543100A74D9A /* DetailsViewModelImpl.swift */; };
+		9F3C0F3E26C05D3200A74D9A /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3D26C05D3200A74D9A /* AssetCell.swift */; };
+		9F3C0F4026C0664C00A74D9A /* PortfolioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F3F26C0664C00A74D9A /* PortfolioCell.swift */; };
+		9F3C0F4226C07C8200A74D9A /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C0F4126C07C8200A74D9A /* TransactionResponse.swift */; };
+		9FA3401026AF1273002928A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3400F26AF1273002928A8 /* AppDelegate.swift */; };
+		9FA3401926AF1274002928A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA3401826AF1274002928A8 /* Assets.xcassets */; };
+		9FA3402826AF13DB002928A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3402726AF13DB002928A8 /* HomeViewController.swift */; };
+		9FA3402A26AF15E3002928A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3402926AF15E3002928A8 /* HomeViewModel.swift */; };
+		9FA3402C26AF1624002928A8 /* HomeViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3402B26AF1624002928A8 /* HomeViewModelImpl.swift */; };
+		9FA3402F26AF16AD002928A8 /* ReloadTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3402E26AF16AD002928A8 /* ReloadTableViewDelegate.swift */; };
+		9FA3403126AF17C0002928A8 /* CryptoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3403026AF17C0002928A8 /* CryptoRepository.swift */; };
+		9FA3403526AF17FE002928A8 /* CryptoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3403426AF17FE002928A8 /* CryptoRepositoryImpl.swift */; };
+		9FA3403926AF18B5002928A8 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3403826AF18B5002928A8 /* Crypto.swift */; };
+		9FA3404026AF1C5A002928A8 /* CryptoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3403F26AF1C5A002928A8 /* CryptoResponse.swift */; };
+		9FA3404326AF1CE4002928A8 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3404226AF1CE4002928A8 /* Quote.swift */; };
+		9FA3404526AF1CFE002928A8 /* USDQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3404426AF1CFE002928A8 /* USDQuote.swift */; };
+		9FA3404826AF22D9002928A8 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3404726AF22D9002928A8 /* CryptoCell.swift */; };
+		9FA3404D26AF24BB002928A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3404C26AF24BB002928A8 /* NetworkManager.swift */; };
+		9FA3404F26AF2503002928A8 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3404E26AF2503002928A8 /* NetworkConstants.swift */; };
+		9FA3405226AF260F002928A8 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3405126AF260F002928A8 /* DataError.swift */; };
+		9FA3405526AF2648002928A8 /* SerializationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3405426AF2648002928A8 /* SerializationManager.swift */; };
+		9FA3405A26B01963002928A8 /* UILabelColoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3405926B01963002928A8 /* UILabelColoring.swift */; };
+		9FA3408326B16DD4002928A8 /* CryptoTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3408226B16DD4002928A8 /* CryptoTabController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5AFE27006DBF39C969CE6D22 /* Pods_Cryptomat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptomat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3C0EBA26BEB91300A74D9A /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		9F3C0EBF26BEC33400A74D9A /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		9F3C0EC326BEC7E800A74D9A /* PortfolioRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRepository.swift; sourceTree = "<group>"; };
+		9F3C0EC526BEC81F00A74D9A /* PortfolioRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRepositoryImpl.swift; sourceTree = "<group>"; };
+		9F3C0EC926BEC88700A74D9A /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
+		9F3C0ECB26BEC8D000A74D9A /* PortfolioViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModelImpl.swift; sourceTree = "<group>"; };
+		9F3C0ECD26BECF3000A74D9A /* PortfolioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRecord.swift; sourceTree = "<group>"; };
+		9F3C0ED526BEF03600A74D9A /* ViewClickListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewClickListener.swift; sourceTree = "<group>"; };
+		9F3C0EE426BF036B00A74D9A /* CryptoPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPick.swift; sourceTree = "<group>"; };
+		9F3C0F0826BFD35E00A74D9A /* PickCryptoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCryptoDelegate.swift; sourceTree = "<group>"; };
+		9F3C0F0F26BFD71800A74D9A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9F3C0F1126BFD77E00A74D9A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9F3C0F1326BFD79700A74D9A /* SearchViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelImpl.swift; sourceTree = "<group>"; };
+		9F3C0F1526BFD83B00A74D9A /* SearchRepositorz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositorz.swift; sourceTree = "<group>"; };
+		9F3C0F1726BFD86400A74D9A /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
+		9F3C0F1A26BFEB7700A74D9A /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
+		9F3C0F2026BFEC0500A74D9A /* CryptoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoType.swift; sourceTree = "<group>"; };
+		9F3C0F2426C0039100A74D9A /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		9F3C0F2C26C0326300A74D9A /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		9F3C0F3226C032B000A74D9A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9F3C0F3426C0523000A74D9A /* ChartDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDateFormatter.swift; sourceTree = "<group>"; };
+		9F3C0F3626C053E500A74D9A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9F3C0F3826C0543100A74D9A /* DetailsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelImpl.swift; sourceTree = "<group>"; };
+		9F3C0F3D26C05D3200A74D9A /* AssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		9F3C0F3F26C0664C00A74D9A /* PortfolioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCell.swift; sourceTree = "<group>"; };
+		9F3C0F4126C07C8200A74D9A /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		9FA3400C26AF1273002928A8 /* Cryptomat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA3400F26AF1273002928A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA3401826AF1274002928A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA3401D26AF1274002928A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA3402726AF13DB002928A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9FA3402926AF15E3002928A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9FA3402B26AF1624002928A8 /* HomeViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelImpl.swift; sourceTree = "<group>"; };
+		9FA3402E26AF16AD002928A8 /* ReloadTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadTableViewDelegate.swift; sourceTree = "<group>"; };
+		9FA3403026AF17C0002928A8 /* CryptoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepository.swift; sourceTree = "<group>"; };
+		9FA3403426AF17FE002928A8 /* CryptoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepositoryImpl.swift; sourceTree = "<group>"; };
+		9FA3403826AF18B5002928A8 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		9FA3403F26AF1C5A002928A8 /* CryptoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoResponse.swift; sourceTree = "<group>"; };
+		9FA3404226AF1CE4002928A8 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		9FA3404426AF1CFE002928A8 /* USDQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDQuote.swift; sourceTree = "<group>"; };
+		9FA3404726AF22D9002928A8 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		9FA3404C26AF24BB002928A8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9FA3404E26AF2503002928A8 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		9FA3405126AF260F002928A8 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		9FA3405426AF2648002928A8 /* SerializationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationManager.swift; sourceTree = "<group>"; };
+		9FA3405926B01963002928A8 /* UILabelColoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelColoring.swift; sourceTree = "<group>"; };
+		9FA3408226B16DD4002928A8 /* CryptoTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTabController.swift; sourceTree = "<group>"; };
+		C2A9EA2D6B5CA95D290DF8E9 /* Pods-Cryptomat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptomat.release.xcconfig"; path = "Target Support Files/Pods-Cryptomat/Pods-Cryptomat.release.xcconfig"; sourceTree = "<group>"; };
+		D7896119E11869FA43C613E0 /* Pods-Cryptomat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptomat.debug.xcconfig"; path = "Target Support Files/Pods-Cryptomat/Pods-Cryptomat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA3400926AF1273002928A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE4E4233198E2D04FA04F6D /* Pods_Cryptomat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F3C0EB926BEB90600A74D9A /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EBA26BEB91300A74D9A /* Portfolio.swift */,
+				9F3C0ECD26BECF3000A74D9A /* PortfolioRecord.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		9F3C0EBC26BEC30300A74D9A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3408126B16DB8002928A8 /* TabController */,
+				9FA3402326AF13B0002928A8 /* Home */,
+				9F3C0F2E26C0328B00A74D9A /* Details */,
+				9F3C0ECF26BEE01200A74D9A /* Exchange */,
+				9F3C0EBD26BEC31300A74D9A /* Portfolio */,
+				9F3C0F0B26BFD6F400A74D9A /* Search */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9F3C0EBD26BEC31300A74D9A /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EBE26BEC32600A74D9A /* UI */,
+				9F3C0EC226BEC7D000A74D9A /* ViewModel */,
+				9F3C0EC126BEC7C800A74D9A /* Repository */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		9F3C0EBE26BEC32600A74D9A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F3A26C05CFF00A74D9A /* Cells */,
+				9F3C0EBF26BEC33400A74D9A /* PortfolioViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F3C0EC126BEC7C800A74D9A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EC326BEC7E800A74D9A /* PortfolioRepository.swift */,
+				9F3C0EC526BEC81F00A74D9A /* PortfolioRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F3C0EC226BEC7D000A74D9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EC926BEC88700A74D9A /* PortfolioViewModel.swift */,
+				9F3C0ECB26BEC8D000A74D9A /* PortfolioViewModelImpl.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F3C0ECF26BEE01200A74D9A /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0ED026BEE01900A74D9A /* UI */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		9F3C0ED026BEE01900A74D9A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F2C26C0326300A74D9A /* ExchangeViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F3C0EE126BF035900A74D9A /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EE426BF036B00A74D9A /* CryptoPick.swift */,
+				9F3C0F4126C07C8200A74D9A /* TransactionResponse.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9F3C0F0B26BFD6F400A74D9A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F0E26BFD70C00A74D9A /* UI */,
+				9F3C0F0D26BFD70500A74D9A /* ViewModel */,
+				9F3C0F0C26BFD6FA00A74D9A /* Repository */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		9F3C0F0C26BFD6FA00A74D9A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F1526BFD83B00A74D9A /* SearchRepositorz.swift */,
+				9F3C0F1726BFD86400A74D9A /* SearchRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F3C0F0D26BFD70500A74D9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F1126BFD77E00A74D9A /* SearchViewModel.swift */,
+				9F3C0F1326BFD79700A74D9A /* SearchViewModelImpl.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F3C0F0E26BFD70C00A74D9A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F0F26BFD71800A74D9A /* SearchViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F3C0F1926BFEB6700A74D9A /* SearchQuery */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F1A26BFEB7700A74D9A /* SearchQuery.swift */,
+				9F3C0F2026BFEC0500A74D9A /* CryptoType.swift */,
+			);
+			path = SearchQuery;
+			sourceTree = "<group>";
+		};
+		9F3C0F2326C0038700A74D9A /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F2426C0039100A74D9A /* Asset.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		9F3C0F2E26C0328B00A74D9A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F3126C032A400A74D9A /* UI */,
+				9F3C0F3026C0329B00A74D9A /* ViewModel */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		9F3C0F3026C0329B00A74D9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F3626C053E500A74D9A /* DetailsViewModel.swift */,
+				9F3C0F3826C0543100A74D9A /* DetailsViewModelImpl.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F3C0F3126C032A400A74D9A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F3226C032B000A74D9A /* DetailsViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9F3C0F3A26C05CFF00A74D9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F3D26C05D3200A74D9A /* AssetCell.swift */,
+				9F3C0F3F26C0664C00A74D9A /* PortfolioCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9FA3400326AF1273002928A8 = {
+			isa = PBXGroup;
+			children = (
+				9FA3400E26AF1273002928A8 /* Cryptomat */,
+				9FA3400D26AF1273002928A8 /* Products */,
+				A711B201C46477010D1A7846 /* Pods */,
+				BD606FD5E5545E89754264B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA3400D26AF1273002928A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3400C26AF1273002928A8 /* Cryptomat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA3400E26AF1273002928A8 /* Cryptomat */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0EE126BF035900A74D9A /* Enums */,
+				9F3C0EBC26BEC30300A74D9A /* Screens */,
+				9FA3405326AF263B002928A8 /* Utils */,
+				9FA3404926AF24A6002928A8 /* Network */,
+				9FA3403626AF189F002928A8 /* Model */,
+				9FA3402D26AF16A3002928A8 /* Delegates */,
+				9FA3400F26AF1273002928A8 /* AppDelegate.swift */,
+				9FA3401826AF1274002928A8 /* Assets.xcassets */,
+				9FA3401D26AF1274002928A8 /* Info.plist */,
+			);
+			path = Cryptomat;
+			sourceTree = "<group>";
+		};
+		9FA3402326AF13B0002928A8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3402426AF13BD002928A8 /* UI */,
+				9FA3402626AF13CA002928A8 /* Viewmodel */,
+				9FA3402526AF13C4002928A8 /* Repository */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9FA3402426AF13BD002928A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3404626AF22CE002928A8 /* Cells */,
+				9FA3402726AF13DB002928A8 /* HomeViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9FA3402526AF13C4002928A8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3403026AF17C0002928A8 /* CryptoRepository.swift */,
+				9FA3403426AF17FE002928A8 /* CryptoRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9FA3402626AF13CA002928A8 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3402926AF15E3002928A8 /* HomeViewModel.swift */,
+				9FA3402B26AF1624002928A8 /* HomeViewModelImpl.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		9FA3402D26AF16A3002928A8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3402E26AF16AD002928A8 /* ReloadTableViewDelegate.swift */,
+				9F3C0F0826BFD35E00A74D9A /* PickCryptoDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9FA3403626AF189F002928A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F3C0F2326C0038700A74D9A /* Asset */,
+				9F3C0F1926BFEB6700A74D9A /* SearchQuery */,
+				9F3C0EB926BEB90600A74D9A /* Portfolio */,
+				9FA3403726AF18AC002928A8 /* Crypto */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FA3403726AF18AC002928A8 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3403F26AF1C5A002928A8 /* CryptoResponse.swift */,
+				9FA3403826AF18B5002928A8 /* Crypto.swift */,
+				9FA3404226AF1CE4002928A8 /* Quote.swift */,
+				9FA3404426AF1CFE002928A8 /* USDQuote.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		9FA3404626AF22CE002928A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3404726AF22D9002928A8 /* CryptoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9FA3404926AF24A6002928A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3404C26AF24BB002928A8 /* NetworkManager.swift */,
+				9FA3404E26AF2503002928A8 /* NetworkConstants.swift */,
+				9FA3405126AF260F002928A8 /* DataError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FA3405326AF263B002928A8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3405426AF2648002928A8 /* SerializationManager.swift */,
+				9FA3405926B01963002928A8 /* UILabelColoring.swift */,
+				9F3C0ED526BEF03600A74D9A /* ViewClickListener.swift */,
+				9F3C0F3426C0523000A74D9A /* ChartDateFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9FA3408126B16DB8002928A8 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3409026B17113002928A8 /* UI */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		9FA3409026B17113002928A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3408226B16DD4002928A8 /* CryptoTabController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A711B201C46477010D1A7846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7896119E11869FA43C613E0 /* Pods-Cryptomat.debug.xcconfig */,
+				C2A9EA2D6B5CA95D290DF8E9 /* Pods-Cryptomat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD606FD5E5545E89754264B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AFE27006DBF39C969CE6D22 /* Pods_Cryptomat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA3400B26AF1273002928A8 /* Cryptomat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA3402026AF1274002928A8 /* Build configuration list for PBXNativeTarget "Cryptomat" */;
+			buildPhases = (
+				FAD4F70F13D252CF423ECBA1 /* [CP] Check Pods Manifest.lock */,
+				9FA3400826AF1273002928A8 /* Sources */,
+				9FA3400926AF1273002928A8 /* Frameworks */,
+				9FA3400A26AF1273002928A8 /* Resources */,
+				276846CBACE9733D59C2A473 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptomat;
+			productName = Cryptomat;
+			productReference = 9FA3400C26AF1273002928A8 /* Cryptomat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA3400426AF1273002928A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9FA3400B26AF1273002928A8 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 9FA3400726AF1273002928A8 /* Build configuration list for PBXProject "Cryptomat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA3400326AF1273002928A8;
+			productRefGroup = 9FA3400D26AF1273002928A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA3400B26AF1273002928A8 /* Cryptomat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA3400A26AF1273002928A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3401926AF1274002928A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		276846CBACE9733D59C2A473 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptomat/Pods-Cryptomat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cryptomat/Pods-Cryptomat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cryptomat/Pods-Cryptomat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD4F70F13D252CF423ECBA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cryptomat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA3400826AF1273002928A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA3405226AF260F002928A8 /* DataError.swift in Sources */,
+				9F3C0EBB26BEB91300A74D9A /* Portfolio.swift in Sources */,
+				9FA3405A26B01963002928A8 /* UILabelColoring.swift in Sources */,
+				9F3C0ECC26BEC8D000A74D9A /* PortfolioViewModelImpl.swift in Sources */,
+				9F3C0F1226BFD77E00A74D9A /* SearchViewModel.swift in Sources */,
+				9FA3404F26AF2503002928A8 /* NetworkConstants.swift in Sources */,
+				9FA3403926AF18B5002928A8 /* Crypto.swift in Sources */,
+				9FA3408326B16DD4002928A8 /* CryptoTabController.swift in Sources */,
+				9F3C0F0926BFD35E00A74D9A /* PickCryptoDelegate.swift in Sources */,
+				9F3C0ED626BEF03600A74D9A /* ViewClickListener.swift in Sources */,
+				9F3C0F3526C0523000A74D9A /* ChartDateFormatter.swift in Sources */,
+				9F3C0F1426BFD79700A74D9A /* SearchViewModelImpl.swift in Sources */,
+				9F3C0EC626BEC81F00A74D9A /* PortfolioRepositoryImpl.swift in Sources */,
+				9FA3404026AF1C5A002928A8 /* CryptoResponse.swift in Sources */,
+				9FA3403126AF17C0002928A8 /* CryptoRepository.swift in Sources */,
+				9F3C0F3926C0543100A74D9A /* DetailsViewModelImpl.swift in Sources */,
+				9F3C0F3726C053E500A74D9A /* DetailsViewModel.swift in Sources */,
+				9F3C0F1026BFD71800A74D9A /* SearchViewController.swift in Sources */,
+				9FA3404D26AF24BB002928A8 /* NetworkManager.swift in Sources */,
+				9F3C0F1626BFD83B00A74D9A /* SearchRepositorz.swift in Sources */,
+				9FA3401026AF1273002928A8 /* AppDelegate.swift in Sources */,
+				9FA3404526AF1CFE002928A8 /* USDQuote.swift in Sources */,
+				9F3C0EC026BEC33400A74D9A /* PortfolioViewController.swift in Sources */,
+				9F3C0ECE26BECF3000A74D9A /* PortfolioRecord.swift in Sources */,
+				9F3C0EE526BF036B00A74D9A /* CryptoPick.swift in Sources */,
+				9F3C0F1826BFD86400A74D9A /* SearchRepositoryImpl.swift in Sources */,
+				9F3C0F4026C0664C00A74D9A /* PortfolioCell.swift in Sources */,
+				9FA3402C26AF1624002928A8 /* HomeViewModelImpl.swift in Sources */,
+				9FA3402F26AF16AD002928A8 /* ReloadTableViewDelegate.swift in Sources */,
+				9FA3402A26AF15E3002928A8 /* HomeViewModel.swift in Sources */,
+				9F3C0F4226C07C8200A74D9A /* TransactionResponse.swift in Sources */,
+				9F3C0F1B26BFEB7700A74D9A /* SearchQuery.swift in Sources */,
+				9F3C0ECA26BEC88700A74D9A /* PortfolioViewModel.swift in Sources */,
+				9F3C0F3E26C05D3200A74D9A /* AssetCell.swift in Sources */,
+				9FA3404826AF22D9002928A8 /* CryptoCell.swift in Sources */,
+				9FA3403526AF17FE002928A8 /* CryptoRepositoryImpl.swift in Sources */,
+				9FA3404326AF1CE4002928A8 /* Quote.swift in Sources */,
+				9F3C0EC426BEC7E800A74D9A /* PortfolioRepository.swift in Sources */,
+				9F3C0F2D26C0326300A74D9A /* ExchangeViewController.swift in Sources */,
+				9F3C0F2126BFEC0500A74D9A /* CryptoType.swift in Sources */,
+				9F3C0F2526C0039100A74D9A /* Asset.swift in Sources */,
+				9F3C0F3326C032B000A74D9A /* DetailsViewController.swift in Sources */,
+				9FA3405526AF2648002928A8 /* SerializationManager.swift in Sources */,
+				9FA3402826AF13DB002928A8 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9FA3401E26AF1274002928A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FA3401F26AF1274002928A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA3402126AF1274002928A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7896119E11869FA43C613E0 /* Pods-Cryptomat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cryptomat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluefactory.Cryptomat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA3402226AF1274002928A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A9EA2D6B5CA95D290DF8E9 /* Pods-Cryptomat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cryptomat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluefactory.Cryptomat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA3400726AF1273002928A8 /* Build configuration list for PBXProject "Cryptomat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3401E26AF1274002928A8 /* Debug */,
+				9FA3401F26AF1274002928A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA3402026AF1274002928A8 /* Build configuration list for PBXNativeTarget "Cryptomat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA3402126AF1274002928A8 /* Debug */,
+				9FA3402226AF1274002928A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA3400426AF1273002928A8 /* Project object */;
+}

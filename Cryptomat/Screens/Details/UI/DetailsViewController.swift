@@ -265,39 +265,11 @@ extension DetailsViewController {
             let pickCryptoVC = ExchangeViewController(portfolioVM: self.portfolioVM, fromCrypto: self.crypto)
             self.navigationController?.pushViewController(pickCryptoVC, animated: true)
         }
-        
-        favButton.setOnClickListener {
-            let defaults = UserDefaults.standard
-            self.isCryptoFav = !self.isCryptoFav
-            if !self.isCryptoFav {
-                self.favButton.setImage(UIImage(named: "StarEmpty"), for: .normal)
-                defaults.setValue(false, forKey: self.crypto.name)
-            }else {
-                self.favButton.setImage(UIImage(named: "StarFull"), for: .normal)
-                defaults.setValue(true, forKey: self.crypto.name)
-            }
-        }
-    }
-    
-    func refreshFavButton(){
-        if isCryptoFav {
-            favButton.setImage(UIImage(named: "StarFull"), for: .normal)
-        } else {
-            favButton.setImage(UIImage(named: "StarEmpty"), for: .normal)
-        }
-        
     }
     
     func setupFavButton(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: favButton)
         checkIfFav()
     }
-    
-    func checkIfFav(){
-        let defaults = UserDefaults.standard
-        isCryptoFav = defaults.bool(forKey: crypto.name)
-        refreshFavButton()
-        
-    }
-    
+  
 }
